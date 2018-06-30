@@ -1,5 +1,8 @@
 # eskulap.loc
-eskulap template
+- /dist
+-     /css
+-     /img
+-     /index.html
 
 ## Михаил
 Menu  Pop Up Box + Menu + Welcome
