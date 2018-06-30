@@ -1,0 +1,2 @@
+# eskulap.loc
+eskulap template
