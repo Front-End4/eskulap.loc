@@ -4,6 +4,8 @@ dist
     -/img  
     -/index.html
 
+## Саша
+Cookies
 ## Михаил
 Menu  Pop Up Box + Menu + Welcome
 ## Игорь
