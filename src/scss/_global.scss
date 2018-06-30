@@ -1,0 +1,53 @@
+
+$c-primary: #3677fd;
+$c-grey: #5a5a5a;
+
+$p-primary: 15px;
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 2.2;
+    font-weight: 400;
+}
+h2 {
+    color: $c-primary;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+}
+.btn {
+    background-color: white;
+    border-radius: 28px;
+    color: #3695ff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    text-transform: uppercase;
+    padding: 14px 70px;
+    text-decoration: none;
+    display: inline-block;
+}
+section {
+    padding: 100px 0;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+.row {
+    margin-left: -$p-primary;
+    margin-right: -$p-primary;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    padding: 0 $p-primary;
+}
+.w-1-1 {
+    width: 100%;
+}
+.w-1-3 {
+    width: calc(100% / 3);
+}
