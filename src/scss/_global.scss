@@ -28,6 +28,11 @@ h2 {
     padding: 14px 70px;
     text-decoration: none;
     display: inline-block;
+    transition: ease .2s background-color;
+    will-change: background-color;
+    &:hover, &:focus {
+        background-color: #f1f8ff;
+    }
     &--small {
         color: $c-primary-dark;
         font-size: 12px;
