@@ -1,0 +1,18 @@
+.cookies {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text {
+        margin-right: $p-primary * 3;
+        font-size: 14px;
+        line-height: 2.5;
+    }
+}
