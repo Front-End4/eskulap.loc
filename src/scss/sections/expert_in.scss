@@ -1,68 +1,45 @@
-.subsection{
-    margin-top: 100px;
-}
-
-.expert-caption{
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
+.expert{
     background-color: #f1f8ff;
+    &__subsection{
+        margin-top: 100px;
+    }
+    &__first-caption{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px; 
+    }
+    &__second-caption{
+        color: $c-primary;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 35px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2.4;
+        color: $c-grey;
+        text-align: center;
+        margin: 0;
+        word-wrap: break-word;
+    }
+    &__img-wrap{
+        width: 142px;
+        height: 142px;
+        border: 1px solid #b7c0c9;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
-.caption {
-    color: $c-primary;
-    font-family: 'Lato';
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 35px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.description{
-    font-family: 'Lato';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 2.4;
-    color: $c-grey;
-    text-align: center;
-    margin: 0;
-    word-wrap: break-word;
-}
-
-.expert-img-wrap{
-    width: 142px;
-    height: 142px;
-    border: 1px solid #b7c0c9;
-    border-radius: 50%;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.expert-img-1{
-    background-image: url('../img/expert_in1.png');
-}
-
-.expert-img-2{
-    background-image: url('../img/expert_in2.png');
-}
-
-.expert-img-3{
-    background-image: url('../img/expert_in3.png');
-}
-
-.expert-img-4{
-    background-image: url('../img/expert_in4.png');
-}
-
-.expert-img-5{
-    background-image: url('../img/expert_in5.png');
-}
-
-.expert-img-6{
-    background-image: url('../img/expert_in6.png');
+@for $expert_img from 0 to 6{
+    .expert__img-#{$expert_img}{ 
+        background-image: url('../img/expert_in#{$expert_img}.png') }
 }
