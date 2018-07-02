@@ -64,64 +64,63 @@
            color: #3677fd; 
         }
     }
-    hr {
-        width: 400px;
-        height: 4px;
-        align-self: center;
-        margin: 0;
-        margin-bottom: 70px;
-        border: none;
-        background-color:#d1d9e4;
-    }
-    .box-social {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-        &__anchore {
-            position: relative;
-            display: block;
-            width: 54px;
-            height: 54px;
-            margin-right: 25px;
-            background-color: #e1e1e1;
-            border-radius: 50%;
-            text-decoration: none;
-            transition: background-color .3s; 
-            &:last-child {
-                margin-right: 0;
-            }
-            &:hover {
-                background-color: #3689fe;
-            }
+}
+hr {
+    width: 400px;
+    height: 4px;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 70px;
+    border: none;
+    background-color:#d1d9e4;
+}
+.box-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    &__anchore {
+        position: relative;
+        display: block;
+        width: 54px;
+        height: 54px;
+        margin-right: 25px;
+        background-color: #e1e1e1;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: background-color .3s; 
+        &:last-child {
+            margin-right: 0;
         }
-        &__icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        &:hover {
+            background-color: #3689fe;
         }
     }
-    .box-lang {
-        display: flex;
-        margin-left: auto;
-        margin-bottom: 15px;
-        &__label {
-            margin-right: 15px;
-            color: #d2d2d2;
-            font-size: 16px;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        &__flag {
-            padding: 0;
-            border: none;
-            outline: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
-
+.box-lang {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 15px;
+    &__label {
+        margin-right: 15px;
+        color: #d2d2d2;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__flag {
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
 .is-active {
     display: block;
 }
