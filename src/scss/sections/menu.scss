@@ -1,0 +1,127 @@
+.menu {
+    display: none;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    text-align: center;
+    &__col {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    &__close {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin-left: auto;
+        margin-bottom: 55px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            opacity: .8;
+        }
+        .close-inner {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #358ffe;
+            transform: rotate(45deg);
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: #358ffe;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 50px;
+        }
+    }
+    &__anchor {
+        color: #d2d2d2;
+        font-size: 50px;
+        line-height: 1;
+        font-weight: 300;
+        text-decoration: none;
+        &:hover {
+           color: #3677fd; 
+        }
+    }
+    hr {
+        width: 400px;
+        height: 4px;
+        align-self: center;
+        margin: 0;
+        margin-bottom: 70px;
+        border: none;
+        background-color:#d1d9e4;
+    }
+    .box-social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        &__anchore {
+            position: relative;
+            display: block;
+            width: 54px;
+            height: 54px;
+            margin-right: 25px;
+            background-color: #e1e1e1;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background-color .3s; 
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: #3689fe;
+            }
+        }
+        &__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .box-lang {
+        display: flex;
+        margin-left: auto;
+        margin-bottom: 15px;
+        &__label {
+            margin-right: 15px;
+            color: #d2d2d2;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        &__flag {
+            padding: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+}
+
+.is-active {
+    display: block;
+}
