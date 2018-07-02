@@ -1,0 +1,32 @@
+.footer {
+    margin-top: -15px;
+    padding: 0;
+    background-color: $c-primary;
+    position: relative;
+}
+.footer__p {
+    color: white;
+    font-family: Lato;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.footer__span {
+    font-weight: 700;
+}
+.conteiner--footer {
+    display: flex;
+    align-items: center;
+    
+}
+.btn--foter {
+    // position: absolute;
+    // margin-left: 55px;
+    // float: right;
+    margin-left: 50px;
+    
+}
