@@ -2,11 +2,14 @@
     margin-top: 100px;
 }
 
+.expert {
+    background-color: #f1f8ff;
+}
+
 .expert-caption{
     text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
-    background-color: #f1f8ff;
 }
 
 .caption {
@@ -30,7 +33,7 @@
     color: $c-grey;
     text-align: center;
     margin: 0;
-    word-wrap: break-word;
+    word-wrap: break-all;
 }
 
 .expert-img-wrap{
@@ -42,27 +45,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.expert-img-1{
-    background-image: url('../img/expert_in1.png');
-}
-
-.expert-img-2{
-    background-image: url('../img/expert_in2.png');
-}
-
-.expert-img-3{
-    background-image: url('../img/expert_in3.png');
-}
-
-.expert-img-4{
-    background-image: url('../img/expert_in4.png');
-}
-
-.expert-img-5{
-    background-image: url('../img/expert_in5.png');
-}
-
-.expert-img-6{
-    background-image: url('../img/expert_in6.png');
+@for $var from 1 to 7 {
+    .expert-img-#{$var}{
+        background-image: url('../img/expert_in#{$var}.png');
+    }
 }
