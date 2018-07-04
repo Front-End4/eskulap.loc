@@ -1,22 +1,20 @@
-
-.clients__header {
-    text-align: center;
-}
-
-.wrapper-clients {
+.clients {
     background-color: #f1f8ff;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
+    &__header {
+        text-align: center;
+        margin: 0;
+}
+    &__container {
+    padding-top: 90px;
+    padding-bottom: 100px;
     
 }
-// .clients__bar {
-//     // display: flex;
-//     // align-items: center;
-//     margin: 0 auto;
-// }
-.clients__list {
+    &__bar {
+    padding-top: 70px;
+}
+    &__list {
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -24,13 +22,20 @@
     align-items: center;
     width: 100%;
 }
-.clients__item {
+    &__item {
     display: inline-block;
     padding: 0 45px;
+    
 }
-.clients__img {
+    &__img {
     filter: grayscale(100%);
 }
-.clients_link:hover + .clients__img {
-    filter: grayscale(0);
+    &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+}
+.clients__link:hover .clients__img {
+    filter: none;
 }
