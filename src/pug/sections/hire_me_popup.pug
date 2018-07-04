@@ -1,11 +1,13 @@
 .formbox
-	.form--text
-		h1.Hire__Me Hire Me
-	.form
-		form(action='', method='get')
-		input.input(type='text', placeholder='      Your Name')
-		input.input(type='text', placeholder='      Your E-Mail')
-		textarea.textarea(name='', id='', cols='30', rows='10', placeholder='\
-		Your Message')
-		br
-		input.submit(type='submit', value='SEND MESSAGE')
+  .formbox--item
+    .form--text
+      h1.Hire__Me Hire Me
+    a.btn__cancel(href='javascript:void(0)')
+      img(src='../../.././dist/img/007__close.png' alt='')
+    .form
+      form(action='' method='get')
+        input.input(type='text' placeholder='Your Name')
+        input.input(type='text' placeholder='Your E-Mail')
+        textarea.textarea(name='' id='' cols='30' rows='10' placeholder='Your Message')
+        br
+        input.submit(type='submit' value='SEND MESSAGE')

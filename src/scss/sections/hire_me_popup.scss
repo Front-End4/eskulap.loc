@@ -21,13 +21,14 @@
 	height: 623px;
 	background-color: white;
 	border-radius: 10px;
-	position: relative;
+	position: fixed;
 	width: 768px;
 	height: 623px;
 	background-color: white;
 	border-radius: 10px;
-	position: relative;
+	
 	left: 258px;
+	display: none;
 }
 .input {
 	width: 519px;
@@ -68,4 +69,7 @@
 	padding-left: 115px;
 	padding-top: 127px;
 	z-index: 2;
+}
+.btn__cancel{
+	position: relative;
 }
