@@ -1,0 +1,33 @@
+@import "_global.scss";
+@import "sections/cookies.scss";
+@import "sections/welcome";
+@import "sections/menu";
+@import "sections/about";
+@import "sections/expert_in.scss";
+@import "sections/clients.scss";
+@import "sections/Hireme.scss";
+@import "sections/hire_me_popup.scss";
+body{
+    padding: 0;
+    margin: 0;
+   
+    .first{
+            display:block;
+            h2{
+                color:blue;
+                font-size:25pt;
+                padding-left:700px;
+                font-family: Lato;
+            }
+        }
+    .second{
+            display:block;        
+            .text{
+                padding-left: 400px;
+                padding-right: 400px;
+                text-align: center;
+                line-height: 40px;
+                font-family: Lato;
+            }
+        }        
+    }
