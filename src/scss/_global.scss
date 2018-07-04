@@ -10,11 +10,17 @@ html {
     line-height: 2.2;
     font-weight: 400;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 h2 {
     color: $c-primary;
     font-size: 50px;
     font-weight: 300;
     line-height: 1;
+    margin-top: 0;
 }
 .btn {
     background-color: white;
@@ -71,9 +77,15 @@ h2 {
 .w-1-3 {
     width: calc(100% / 3);
 }
+.w-1-4 {
+    width: calc(100% / 4);
+}
 .bg {
     &--primary {
         background-color: $c-primary;
+        h2 {
+            color: white;
+        }
         &-dark {
             background-color: $c-primary-dark;
         }
