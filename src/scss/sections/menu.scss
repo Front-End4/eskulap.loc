@@ -100,7 +100,7 @@
     }
     .box-lang {
         display: flex;
-        margin-left: auto;
+        justify-content: flex-end;
         margin-bottom: 15px;
         &__label {
             margin-right: 15px;
