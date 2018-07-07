@@ -1,18 +1,14 @@
 .menu {
-    display: none;
     width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
     text-align: center;
+    padding: 20px;
+    max-width: 1170px;
+    border-radius: 10px;
+    box-sizing: border-box;
     &__col {
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
         background-color: #fff;
-        border-radius: 10px;
     }
     &__close {
         width: 25px;
