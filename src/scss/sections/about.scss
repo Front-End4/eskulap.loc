@@ -1,22 +1,24 @@
-.first{
-    width: 1550px;
-    height: 150px;
-    
-}
-.about{
-    color:blue;
-    font-size:25pt;
-    padding-left:700px;
-    font-family: Verdana;
-}
-.second{
-    width: 1550px;
-    height: 250px;
-
-}
-.text{
-    padding-left: 400px;
-    padding-right: 400px;
-    text-align: center;
-    line-height: 1cm;
-}
+body{
+    padding: 0;
+    margin: 0;
+   
+    .first{
+            display:block;
+            h2{
+                color:blue;
+                font-size:25pt;
+                padding-left:700px;
+                font-family: Lato;
+            }
+        }
+    .second{
+            display:block;        
+            .text{
+                padding-left: 400px;
+                padding-right: 400px;
+                text-align: center;
+                line-height: 40px;
+                font-family: Lato;
+            }
+        }        
+    }

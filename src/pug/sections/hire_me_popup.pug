@@ -1,20 +1,32 @@
-head
-  meta(charset='UTF-8')
-  meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible', content='ie=edge')
-  title Eskulap
-  link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet')
-  link(rel='stylesheet', href='./css/normalize.css')
-  link(rel='stylesheet', href='./css/style.css')
-  link(rel='stylesheet', href='style.css')
+.popup
+	.popup__bg
+	.popup__container
+		.popup__block
+			a.btn.btn--close(href="javascript:void(0)")
+			h2 Hire Me
+			.form
+				form(action="#", method="get")
+					.form__field
+						input.form__input(type="text", name="name", placeholder="Your Name")
+						.form__error error text
+					.form__field
+						input.form__input(type="email", name="email", placeholder="Your Email")
+						.form__validation this filed is requiered
+					.form__field
+						textarea.form__input.form__input--textarea(name="message", placeholder="Your Message")
+					.form__field
+						input.form__submit.btn.btn--secondary(type="submit", value="SEND MESSAGE")
+
 .formbox
-  .form--text
-    h1.Hire__Me Hire Me
-  .form
-    form(action='', method='get')
-      input.input(type='text', placeholder='      Your Name')
-      input.input(type='text', placeholder='      Your E-Mail')
-      textarea.textarea(name='', id='', cols='30', rows='10', placeholder='\
-      Your Message')
-      br
-      input.submit(type='submit', value='SEND MESSAGE')
+	.formbox--item
+		.form--text
+			h1.Hire__Me Hire Me
+		a.btn__cancel(href='javascript:void(0)')
+			img(src='../../.././dist/img/007__close.png' alt='')
+		.form
+			form(action='' method='get')
+				input.input(type='text' placeholder='Your Name')
+				input.input(type='text' placeholder='Your E-Mail')
+				textarea.textarea(name='' id='' cols='30' rows='10' placeholder='Your Message')
+				br
+				input.submit(type='submit' value='SEND MESSAGE')
