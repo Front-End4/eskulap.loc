@@ -8,3 +8,152 @@
 @import "sections/Hireme.scss";
 @import "sections/hire_me_popup.scss";
 @import "sections/works.scss";
+//media for tablet devices (medium screen)
+@media screen and (max-width: 992px) {
+    h2 {
+        margin: 0;
+    }
+    .section,
+    section {
+        padding: 50px 0;
+    }
+    .container {
+        max-width: 768px;
+        &--footer {
+            display: block;
+            text-align: center;
+        }
+    }
+    .medium {
+        &-w {
+            &-1 {
+                &-1 {
+                    width: 100%;
+                }
+                &-2 {
+                    width: 50%;
+                }
+                &-3 {
+                    width: calc(100% / 3);
+                }
+            }
+        }
+    }
+    .welcome {
+        padding-top: 83px;
+    }
+    .expert {
+        &__subsection {
+            margin-top: 50px;
+        }
+    }
+    .clients {
+        &__item {
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+    }
+    .footer {
+        &__title {
+            margin-right: 0;
+            margin-bottom: 50px;
+            b,
+            strong {
+                display: block;
+            }
+        }
+    }
+    .popup {
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+//media for tablet devices (medium screen)
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 32px;
+    }
+    .btn {
+        &--white {
+            margin-bottom: 1em;
+        }
+    }
+    .small {
+        &-w {
+            &-1 {
+                &-1 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .cookies {
+        padding-bottom: 14px;
+        &__wrap {
+            display: block;
+            text-align: center;
+        }
+        &__text {
+            margin: 0;
+        }
+    }
+    .welcome {
+        padding-top: 162px;
+        &__title {
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+        &__text {
+            margin-bottom: 1em;
+        }
+    }
+    .expert {
+        &__second {
+            &-caption {
+                margin: 20px 0;
+                font-size: 18px;
+            }
+        }
+    }
+    .work {
+        &__link {
+            padding: 20px;
+            padding-bottom: 0;
+        }
+    }
+    .menu {
+        &__anchor {
+            font-size: 24px;
+        }
+        &__item {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 25px;
+            }
+        }
+        &__close {
+            margin-bottom: 15px;
+        }
+        hr {
+            margin-bottom: 25px;
+        }
+    }
+    .popup {
+        h2 {
+            margin-bottom: 25px;
+        }
+        &__block {
+            padding: 30px;
+            min-height: 0;
+        }
+    }
+    .form {
+        &__field {
+            &:last-child {
+                padding-top: 25px;
+            }
+        }
+    }
+}
